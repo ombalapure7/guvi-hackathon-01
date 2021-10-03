@@ -1,0 +1,131 @@
+/* Heading text and logo  */
+.heading-content {
+  display: flex;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.heading p {
+  margin: 0;
+}
+
+.title-heading {
+  font-size: 2rem;
+  text-align: center;
+  color: azure;
+}
+
+/* Animations */
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Card styling */
+.card-wrapper {
+  animation: anim 1.2s backwards;
+  margin-top: 2rem;
+}
+
+.jumbotron {
+  animation: anim 0.5s;
+
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 3rem;
+  background: rgb(125,125,161);
+  background: linear-gradient(90deg, rgba(125,125,161,1) 0%, rgba(244,236,236,1) 100%);
+}
+
+.heading {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pokemon-name {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.pokemon-card {
+  height: 30rem;
+  width: 25rem;
+  border-radius: 2rem;
+
+  background-color: azure;
+  box-sizing: border-box;
+  margin-bottom: 4rem;
+  transition: all 0.2s;
+  box-shadow: 1px 3px 71px -7px rgba(0,0,0,0.50);
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 10px 10px 71px 0px rgba(0,0,0,0.66);
+}
+
+.description {
+  background-color: aquamarine;
+  height: 40%;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.description p {
+  transform: translate(2rem, 1rem);
+}
+
+.image-wrapper {
+  height: 60%;
+}
+
+.image-wrapper img {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Creator Part */
+.creator-part {
+  text-align: right;
+  padding: 0.3rem 2rem;
+}
+
+.creator-part p {
+  padding: 0;
+  margin: 0;
+}
+
+.text-right {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.text-right i {
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: tomato;
+}
+
+@media (max-width: 650px) {
+  .creator-part {
+    text-align: center;
+    padding: 0.3rem 2rem;
+  }
+}
